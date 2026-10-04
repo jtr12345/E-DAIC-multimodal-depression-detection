@@ -1,0 +1,130 @@
+{
+  "logistic_regression__text": {
+    "macro_f1": 0.6546713547646383,
+    "auroc": 0.7548209366391184,
+    "balanced_accuracy": 0.6562998405103668,
+    "confusion_matrix": [
+      [
+        173,
+        36
+      ],
+      [
+        34,
+        32
+      ]
+    ],
+    "n": 275
+  },
+  "logistic_regression__audio": {
+    "macro_f1": 0.5655170095468602,
+    "auroc": 0.6128026678265913,
+    "balanced_accuracy": 0.5729665071770335,
+    "confusion_matrix": [
+      [
+        154,
+        55
+      ],
+      [
+        39,
+        27
+      ]
+    ],
+    "n": 275
+  },
+  "logistic_regression__video": {
+    "macro_f1": 0.5328525641025641,
+    "auroc": 0.5618384804987676,
+    "balanced_accuracy": 0.5442583732057417,
+    "confusion_matrix": [
+      [
+        142,
+        67
+      ],
+      [
+        39,
+        27
+      ]
+    ],
+    "n": 275
+  },
+  "logistic_regression__early_tav": {
+    "macro_f1": 0.6474358974358975,
+    "auroc": 0.7588081774684645,
+    "balanced_accuracy": 0.645933014354067,
+    "confusion_matrix": [
+      [
+        175,
+        34
+      ],
+      [
+        36,
+        30
+      ]
+    ],
+    "n": 275
+  },
+  "xgboost__text": {
+    "macro_f1": 0.5727245388933441,
+    "auroc": 0.7166159199652021,
+    "balanced_accuracy": 0.5717703349282297,
+    "confusion_matrix": [
+      [
+        201,
+        8
+      ],
+      [
+        54,
+        12
+      ]
+    ],
+    "n": 275
+  },
+  "xgboost__audio": {
+    "macro_f1": 0.5127162810089639,
+    "auroc": 0.6331738437001595,
+    "balanced_accuracy": 0.5314992025518341,
+    "confusion_matrix": [
+      [
+        200,
+        9
+      ],
+      [
+        59,
+        7
+      ]
+    ],
+    "n": 275
+  },
+  "xgboost__video": {
+    "macro_f1": 0.5413800291849072,
+    "auroc": 0.5811222270552414,
+    "balanced_accuracy": 0.5514354066985646,
+    "confusion_matrix": [
+      [
+        202,
+        7
+      ],
+      [
+        57,
+        9
+      ]
+    ],
+    "n": 275
+  },
+  "xgboost__early_tav": {
+    "macro_f1": 0.5451583801122695,
+    "auroc": 0.7213281136726113,
+    "balanced_accuracy": 0.5518341307814992,
+    "confusion_matrix": [
+      [
+        199,
+        10
+      ],
+      [
+        56,
+        10
+      ]
+    ],
+    "n": 275
+  }
+}

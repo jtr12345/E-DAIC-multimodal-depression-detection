@@ -1,0 +1,21 @@
+# E-DAIC / E-DAIC derived data: never commit these files
+D:\DAIC-WOZ/
+data/
+labels/
+*.wav
+*.mp4
+*.avi
+*Transcript.csv
+*OpenFace*.csv
+*OpenSMILE*.csv
+*CNN_*.mat
+*.pkl
+*.npz
+*.npy
+*predictions.csv
+*oof_predictions.csv
+repo_embeddings/
+huggingface-cache/
+.venv/
+__pycache__/
+.ipynb_checkpoints/

@@ -1,0 +1,37 @@
+{
+  "seed": 42,
+  "n": 275,
+  "n_bootstrap": 2000,
+  "combinations": {
+    "T": [
+      "text"
+    ],
+    "A": [
+      "audio"
+    ],
+    "V": [
+      "video"
+    ],
+    "TA": [
+      "text",
+      "audio"
+    ],
+    "TV": [
+      "text",
+      "video"
+    ],
+    "AV": [
+      "audio",
+      "video"
+    ],
+    "TAV": [
+      "text",
+      "audio",
+      "video"
+    ]
+  },
+  "models": [
+    "logistic_regression",
+    "xgboost"
+  ]
+}
