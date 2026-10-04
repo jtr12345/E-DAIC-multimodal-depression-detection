@@ -99,13 +99,15 @@ def official_split(data, y, split):
     rows = []
     train, dev, test = split == "train", split == "dev", split == "test"
     for model_name in ("logistic_regression", "xgboost"):
-        combo = COMBINATIONS["TAV"]
-        X = np.hstack([data[name] for name in combo])
-        model = make_model(model_name)
-        model.fit(X[train], y[train])
-        for name, mask in (("dev", dev), ("test", test)):
-            p = model.predict_proba(X[mask])[:, 1]
-            rows.append({"model": model_name, "split": name, "n": int(mask.sum()), **metrics(y[mask], p)})
+        for combo_name in ("T", "TA", "TAV"):
+            combo = COMBINATIONS[combo_name]
+            X = np.hstack([data[name] for name in combo])
+            model = make_model(model_name)
+            model.fit(X[train], y[train])
+            for name, mask in (("dev", dev), ("test", test)):
+                p = model.predict_proba(X[mask])[:, 1]
+                rows.append({"model": model_name, "combination": combo_name, "split": name,
+                             "n": int(mask.sum()), **metrics(y[mask], p)})
     return pd.DataFrame(rows)
 
 
